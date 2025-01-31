@@ -1,0 +1,13 @@
+let x=56;
+x=x+5;
+console.log(x);
+x+=6;
+console.log(x);
+x-=1;
+console.log(x);
+x*=1;
+x/=1;
+x**=2;
+x-=2;
+x%=1;
+console.log(x);

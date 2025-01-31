@@ -1,0 +1,295 @@
+javascript is a programmng language
+                 
+        Variables  in javascript 
+
+Variable : we use the variable to store data temporarily.
+1. while we are declaring varaible wer need not to use the reserver keywords.
+2. we use the meaningful name 
+3. cannot start with a number eg: 1name
+4. cannot contain a space or hypen while declaring the variable.
+5. these vatiavles are case-sensitive eg:firstName
+6. we can take the multiple variables Eg: let firstName="hello" ,lastName="welcome";
+
+we have the three types of variable
+1 : let it is a block-scope variable
+2 : var it is a global-scope variable
+3 : const which is once declared then we cant change it is fix forever.
+
+     Constants in javascript 
+
+we use the const variable if we want to keep any variable as const we need not assign antyhing to that variable 
+eg code ;
+const interestrate =0.3;
+interestrate=1; we cannot assign value to const once it is constant then it is fixed no change
+cosole.log(interestrate);
+
+we have two types of types they are 
+1. primitives  valuetypes
+2. Reference types
+
+primitives are copies by their value 
+eg:
+let number=10;
+function increment(number){
+     number++;
+}
+increment(number);
+console.log(number);    // output is 10 because we call by value .
+
+by value" means that when you pass a variable to a function, a copy of its actual value is passed, so changes made to that copy within the function won't affect the original variable.
+
+by reference means that a memory address (reference) to the variable is passed, so any modifications to the object within the function will directly affect the original object as well. 
+
+
+objects are copied by their reference
+let obj ={value:10};
+function increase(obj){
+     obj.value++;
+}
+increase(obj);
+console.log(obj);
+
+
+     primitive types in javascript 
+1: string    -> which we write inside the codes
+2: boolean   -> which reference to true or false 
+3: null     -> it is the type of object
+4: undefined -> when we dont assign anything to a variable then it is undefined.
+5: number   ->if we write a number then it is the type of number
+
+     Reference types in javascript
+1: object  -> it is nothing but the group of elements represented inside the curly braces.
+eg: let person={
+     name:"hello",
+     age:30,
+     gender:"male"
+}
+console.log(person);
+dot notaion 
+person.name="nagaraju"; this is for adding the name;
+console.log(person.name); to access the name exist insid the person.
+
+bracket notation 
+
+person['name']="nagaraju";
+
+
+2: array  -> array is nothing but an group of elements and we can store different datatypes  in javascript;
+In arrays the indexing concept is exat and it start from the 0;
+
+let names=['sai' , 'naresh' , 'dheeraj'];
+we can add the new number inside the array names[4]='nani';
+console.log(names);
+
+3: function : function is  fundamental building block in js it is a set of statements which perform a task and caluculate a value.
+while decaring a functon we pass 
+Types of functions in javascript :
+1. performing a task
+2. calculating a value
+
+     javascript is a dynamic language
+
+static language :
+
+In static languages we declare a variable , the type of the variable is set it cannot be change the value in runtime which is java c languages;
+
+Dynamic language :
+
+In dynamic languages we declare a variable , the type of the variable is change in the run-time. eg: python , js , php languages. 
+
+eg:let name="hello"
+typeof(name);
+name=34;
+typeof(name);
+number 
+
+           operators in javascript 
+
+1: arithmetic operator -> add + , sub - , div  , modulo % exponential  ** , mul *  post increment  ++x , pre imcrement x++ , post decrement --y , pre decrement y--.
+
+2: assignment operator  -> = , += ,-= , *= , = , %= , **= .
+
+3: comparison operator  -> ==  ,  === , != ,  !== , > , < ,  >= , <= , ? 
+
+== and === differences
+== only compare the content 
+=== compare the both content and type
+
+
+4: ternary operator  -> ? 
+
+5: logical perator   -> logical and (&&)  if both are true return true or else false logical or(||) return true one of the operant is true.
+and not operator ! give me the opposite .
+
+6: bitwise operator  -> & and , | or , ~ not , ^ xor , << left shift ,>> right shift , >> unsigned right shift. 
+
+
+          conditional statements 
+1: if -else -> if condition is executed the condition of if is true and we also have the else-if for cheking the condition and no condition is true then the final else block will bw executed.
+
+2: switch..case  -> we use the switch case instead of if-else here we have the case if any of the case is matched with we passsed value then it will execute and we use the break keyword and we have the default thing which condition is not true then it execute the default one.
+
+        loops concept in javasccript 
+
+for loop : we have the initalization and condition checking and the increment.
+
+while loop : in loop we write on the condition mainly until the condition is met.
+
+do-while loop : first it will execute code  and then after it will check the condition whether condition is true or false.
+dowhile loop ex4cute atleast once 
+
+for-in loop : when we have the object and we need to access the each element we use the for-in loop.
+
+for-of loop : it is advanced and we use this  for iterate over an array objects.
+
+Break : when we write tyhe break inside a loop it will terminate the loop.
+
+continue : if we write continue for a condition that condition is continues at that condition u have written.
+
+
+                      objects
+
+object-literal-function : object-oriented programming (oop)
+
+in object we consist of primitive property and object property and also function (which we call as the method)
+
+it is a collection of objects which talk to each other to perform some functanalities
+
+A function is a part of the object in object oriented then we call that function as the method
+
+constructor : in default the every object has constructor we need not to create it externally.
+
+dynamic-nature-of-object :we can add thelement inside th object and delete the elements in the objects. 
+
+functionsareobjects : Circle.call({},1)
+Circle.apply({} ,[1,2,3])
+we use the apply when we need to pass the second element as the array.
+when we are writing the new keyword it will create empty object internally {} and pass as a first argument to the call method this object referces the context this we are using. this will reference the object.
+const another = new Circle(1); 
+
+
+factory functions: in this we need to create a function and we need call the function and return the object.
+
+constructor-function : in constructor we use the new operator and instead of writtening an object we us ethe this keyword.
+we have to create the object 
+
+when we use he new operator we have 3 process they are 
+1: new will create an empty object 
+2: it will set this to the object
+3: and finally it will return the object from the function
+
+
+        enumerating the objects
+
+for enumerating the objects we use the for in loop for the objects and we also use the for of loop when we the Objecr.keys and some other functionalities we use .
+
+           cloning an objects
+
+we are creating an exact copy of an existing objects.
+
+         Garbage collector
+
+the role of the gabage collector is find the variable and constants no longer use and deallocate the memory that was alocated early.
+
+
+           string
+//String primitive
+const message ="this is my first message";
+
+//string object 
+const another = new String('hi);
+         
+               Template-literal(using the backticks)
+
+for making the multiple lines of the code we use the backticks and we use tyhe single and double code inside the backticks.
+` we are 'erer'erere'ereer'erere'er`.  in this we use the placeholder.
+
+
+we have three main methods they are 
+1: filter : it will return the new array which filter based on condition and give the resul.
+2: Map : it is the which we used to map all the elements based on condition which result the new array by mapping all elements.
+3: reduce :by using the reduce funtion we can make the total array into single elements based on the condition we have write;
+
+                    Functions in javascript 
+
+1: Function Declaration : it is normal declaration of function
+
+2: Anonymous Function Expressions :  In this function is assigned to the variable and we call that function by assigned variable. 
+
+expression is a unit of code that results in a value.
+
+what is mean by hoisting ?.
+
+1: hoisting is only applicable for the function declaration it is not applicable for the function Expression
+ 2:hositing is the process of moving the function declaration to  top of the file .
+ 3: Variables declared using var are hoisted but only their declaration, not their initialization.
+ eg:
+ walk();
+ function walk(){
+     console.log('hello);
+ }
+
+
+                     Local and Global scope
+
+if the varable is declared inside a loop or function or block , the variable can be accesible only inside that block this we call as the local scope
+
+if the variable is declared outside a function and outside a method and it is global variable which can access by everyone  this is we call as the block scope.
+
+let :  it is a local scope it is a block scope 
+when we declare let outside the function the variable is not attached with window object in the browser.
+
+var : it is global scope element 
+when we use the var outside the function it create a global variable attach the global variable to window object in the browser.
+
+                      This Keyword 
+
+this reference to the object that is executing the current function 
+
+
+               Execution Context (GLOBAL)
+when we are executing the program the javascript engine defaulty provide the Global object and the this variable for u 
+global means "Not inside a function"  Global Object(window) = 'this'
+
+execution context :
+
+1: Global Object
+2: this
+3: outer Environment
+4: Your code
+
+javascript is a single threaded: single threaded means that execute the one command at at time.
+Synchronous : one at a time.
+
+ Invocation :  Running a function  in javascript by using parenthesis().
+ function a(){
+     b();
+     var c;
+ }
+ function b(){
+     var d;
+ }
+ a();
+ var d;
+  
+in the above the the function a is executed first and then call the b function it will execute total b function and poped up then it will go back to a and execute the rest code this is the process of execution.
+
+    scope chain
+
+scope mean by where a variable is available in your code.
+
+1: Global Scope: The variable declared as globally and is available for access throughout your code.
+
+2: Function Scope: The variable declared inside a function and it can be accessed inside the function itself
+
+3:Block Scope: The variable declared in a block and those variables are needed in the block.
+
+4: Lexical scope: In the lexical environment, the Inner function can access the outer variables as well as the variables inside the function. And also get access to the variables that are defined by its parent function. 
+
+            asynchronous callbacks
+
+asynchronous means more than one at a time.
+
+
+             callbacks
+a function you give to another function to be run when the other function is finished 
